@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--TITLE-->
+  <title>tishop</title>
+  <!--IONICON-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!--"Instrument Sans"-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!--top-menu-->
+  <div class="top-menu">
+    <p class="shops-name">amazon<ion-icon name="cube-outline"></ion-icon>finds</p>
+    <div class="search-buttons">
+      <div class="full-search">
+        <input type="text" placeholder="Search amazon finds..." class="search">
+        <button class="search-button"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
+      <div>
+        <button id="cart-button" class="menu-buttons"><ion-icon name="bag-outline"></ion-icon></button>
+        <button id="side-menu-button" class="menu-buttons"><ion-icon name="reorder-four-outline"></ion-icon></button>
+      </div>
+    </div>
+  </div>
+  <!--side-menu-->
+  <div class="side-menu" id="side-menu">
+    <p class="cross" id="cross-side-menu"><ion-icon name="close-outline"></ion-icon></p>
+    <p class="filter-name">filter</p>
+  </div>
+  <!--cart-menu-->
+  <div class="cart-menu" id="cart-menu">
+    <p class="cross" id="cross-cart-menu"><ion-icon name="close-outline"></ion-icon></p>
+    <p class="cart-name">cart</p>
+    <p class="cart-icon"><ion-icon name="cart-outline"></ion-icon></p>
+  </div>
+  <!--products-->
+  <h1>Amazon finds</h1>
+  <div class="section" style="margin-top: 80px;">
+
+
+    <div class="product">
+        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61ler2Tcp6L._AC_SL1500_.jpg">
+        <div class="name-price">
+          <h2 class="product-name">LED Clouds</h2>
+          <p class="product-price">€<span class="euros">117</span><span class="cents">00</span></p>
+        </div>
+        <h3 class="product-description">
+          Description: <br>
+          The cloud light will be the most magical wall decoration lighting you will find. Create the same feeling in our home through an abundance of DIY accessories.
+        </h3>
+        <div class="product-button-parent">
+          <a class="product-button" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
+          Decoration-Changing-Thunder-Holiday/dp/B0BFLCC4XH/ref=sr_1_6?crid=W3WKC0K5NPPI&dib
+          =eyJ2IjoiMSJ9.0MEbzkzskj1u0H7-ERb-08Jx9EBn_F59sIC0vXD5OKKD2bv8OuDUgsM-0DCh1yifa28P
+          tSiIMHHvcJ4xfNl9OME6sUqekL9LeLPR1adgxs7DRQD3zBNxpZOZjnbgWpts5LzE_LBCLgW9_oUke2L-aw4
+          ziiIVyT8GB1I1dMy98f9fH2z-ebc5Drg0x89YG2NVIJzxJ_Zsc0Gg-6m-oUFQt0k01B7gjXwf-MG4yue41UH
+          dLko2ZRL5jmxgXxS3Yb_uB7EttZeDsQ2v4QybeyTlR9kQ5PHhei8UfB_48hOKSg_OQUnE1NOilJ6N9PDMuHrt1
+          fozUDKOlQCRa5V5CoENHzDtQpdnFSGskx2lVHel-NLDIDHJEhMyIBV4SxMgPmr5XFN_LmZbukbpuRealV1Erdd4
+          d3y8NLEczqNe9mxezluHL2A7Uq6HTxESqQg1D9LL.2CTAWwki1KoXlcH3Cx6G_x_SGLZm6EBVlTwNlAuU5eM&d
+          ib_tag=se&keywords=led+clouds&qid=1742054092&sprefix=led+clou%2Caps%2C98&sr=8-6">
+            see on amazon
+          </a>
+          <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=uFmy3T_0zxM">
+            see video
+          </a>
+        </div>
+    </div>
+
+    <div class="product">
+        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71Ja4j-hJML.__AC_SX300_SY300_QL70_ML2_.jpg">
+        <div class="name-price">
+          <h2 class="product-name">Fire Blanket</h2>
+          <p class="product-price">€<span class="euros">46</span><span class="cents">23</span></p>
+        </div>
+        <h3 class="product-description">
+          Description: <br>
+          Prepared hero fire blanket: clear small burns quickly and easily without mess (unlike conventional fire extinguishers). Simply unfold the blanket by pulling down the tabs.
+        </h3>
+        <div class="product-button-parent">
+          <a class="product-button" target="_blank" href="https://www.amazon.de/Prepared-Hero-Fire-Blanket-Emerg
+          encies/dp/B08TYT543Y/ref=sr_1_2_sspa?crid=2WWJWHT0GDGGK&dib=eyJ2IjoiMSJ9.J-RNxs2mrPCfaIuH7kQp1xH6oFDbu
+          woH2R9s9svTVePJ7HGJ1RLITa840A4g5Opada0DhnnCQSl1VDu5kAm6uVF-VAUs7Cw-fibLQMQKln1QnDatIJhRabkiD083KNog1KhL
+          LE74z7kTrCDTMarQVJqkePmdOk0JocVcuzxNyUP6lFqegQDf_79YvGbauBQ5FwgFjYTvy8sS_WrM7KZ3KZPrMMO8hVU8rWYfC9vPN9F
+          b7QEJO-7X4d6YKV0aAjWGC0CRtKYD_2ErF5FaaQ_xVwxS84Q051JcXFz2QgzBobE.TMn_Vqn5IfNup3KuIV-fxHsj3ZJMbae_FOcKEK
+          kfr5E&dib_tag=se&keywords=fire%2Bblanket&qid=1742051822&sprefix=fire%2Bbl%2Caps%2C94&sr=8-2-spons&sp_cs
+          d=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+            see on amazon
+          </a>
+          <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=pvgbiSBcsfU">
+            see video
+          </a>
+        </div>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
