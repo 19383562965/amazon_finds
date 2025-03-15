@@ -291,7 +291,7 @@ a {
   background-color: white;
   color: black;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 450px) {
   .shops-name {
     display: none;
   }
