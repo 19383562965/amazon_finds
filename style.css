@@ -342,9 +342,6 @@ a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0);
     height: 290px;
   }
-  .top-menu {
-    height: 75px;
-  }
   .search-buttons {
     width: 90%;
     display: flex;
