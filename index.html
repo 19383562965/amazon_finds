@@ -24,7 +24,7 @@
         <input type="text" placeholder="Search amazon finds..." class="search">
         <button class="search-button"><ion-icon name="search-outline"></ion-icon></button>
       </div>
-      <div>
+      <div style="margin-right: 10px;">
         <button id="cart-button" class="menu-buttons"><ion-icon name="bag-outline"></ion-icon></button>
         <button id="side-menu-button" class="menu-buttons"><ion-icon name="reorder-four-outline"></ion-icon></button>
       </div>
@@ -34,7 +34,21 @@
   <div class="side-menu" id="side-menu">
     <p class="cross" id="cross-side-menu"><ion-icon name="close-outline"></ion-icon></p>
     <p class="filter-name">filter</p>
-    <input type="checkbox">
+
+    <p class="name-for-filter">-basketball-</p>
+    <div class="checkbox-parent">
+      <input type="checkbox" id="checkbox-basketball" class="checkbox">
+    </div>
+    
+    <p class="name-for-filter">-LED-</p>
+    <div class="checkbox-parent">
+      <input type="checkbox" id="checkbox-LED" class="checkbox">
+    </div>
+
+    <p class="name-for-filter">-Modern-</p>
+    <div class="checkbox-parent">
+      <input type="checkbox" id="checkbox-modern" class="checkbox">
+    </div>
   </div>
   <!--cart-menu-->
   <div class="cart-menu" id="cart-menu">
@@ -48,13 +62,39 @@
   <div class="section" style="margin-top: 80px;">
 
     <div class="product">
+      <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61JotCrdeXL._AC_SL1000_.jpg">
+      <div class="name-price">
+        <h2 class="product-name">Fancy book shelf</h2>
+        <p class="product-price">€<span class="euros">29</span><span class="cents">48</span></p>
+      </div>
+      <h3 class="product-description">
+        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon> 2.5<br>
+        Creative Simple Wooden Tree Bookcase, Wooden Desktop Organiser Shelf.
+        <br><br><br>
+      </h3>
+      <div class="product-button-parent">
+        <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
+        Decoration-Changing-Thunder-Holiday/dp/B0BFLCC4XH/ref=sr_1_6?crid=W3WKC0K5NPPI&dib
+        =eyJ2IjoiMSJ9.0MEbzkzskj1u0H7-ERb-08Jx9EBn_F59sIC0vXD5OKKD2bv8OuDUgsM-0DCh1yifa28P
+        tSiIMHHvcJ4xfNl9OME6sUqekL9LeLPR1adgxs7DRQD3zBNxpZOZjnbgWpts5LzE_LBCLgW9_oUke2L-aw4
+        ziiIVyT8GB1I1dMy98f9fH2z-ebc5Drg0x89YG2NVIJzxJ_Zsc0Gg-6m-oUFQt0k01B7gjXwf-MG4yue41UH
+        dLko2ZRL5jmxgXxS3Yb_uB7EttZeDsQ2v4QybeyTlR9kQ5PHhei8UfB_48hOKSg_OQUnE1NOilJ6N9PDMuHrt1
+        fozUDKOlQCRa5V5CoENHzDtQpdnFSGskx2lVHel-NLDIDHJEhMyIBV4SxMgPmr5XFN_LmZbukbpuRealV1Erdd4
+        d3y8NLEczqNe9mxezluHL2A7Uq6HTxESqQg1D9LL.2CTAWwki1KoXlcH3Cx6G_x_SGLZm6EBVlTwNlAuU5eM&d
+        ib_tag=se&keywords=led+clouds&qid=1742054092&sprefix=led+clou%2Caps%2C98&sr=8-6">
+          see on amazon
+        </a>
+      </div>
+  </div>
+
+    <div class="product">
       <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71kZyzTL7fL._AC_SL1500_.jpg">
       <div class="name-price">
         <h2 class="product-name">Basket Light</h2>
         <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
       </div>
       <h3 class="product-description">
-        Description: <br>
+        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon> 4.5<br>
         Unique 3D basketball lamp: the basketball lamp is made by 3D technology, which is based on real basketball. With its soothing, enchanted design, our basketball lamp keeps you away from the dark. Create a quiet ambience in your room and help you drift off into a happy sleep under the light.
       </h3>
       <div class="product-button-parent">
@@ -78,7 +118,7 @@
         <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
       </div>
       <h3 class="product-description">
-        Description: <br>
+        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon> 4.0<br>
         Large digital wall clock shows date/time, temperature (℃/℉) and adjustable night light, it is clear and large enough to read the time at night or long distance. Large clock size: 340g, easy to read, whether in the dark night or strong light, you can still read the time easily.
       </h3>
       <div class="product-button-parent">
@@ -103,11 +143,12 @@
           <p class="product-price">€<span class="euros">117</span><span class="cents">00</span></p>
         </div>
         <h3 class="product-description">
-          Description: <br>
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon> 3.5<br>
           The cloud light will be the most magical wall decoration lighting you will find. Create the same feeling in our home through an abundance of DIY accessories.
+          <br><br><br>
         </h3>
         <div class="product-button-parent">
-          <a class="product-button" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
+          <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
           Decoration-Changing-Thunder-Holiday/dp/B0BFLCC4XH/ref=sr_1_6?crid=W3WKC0K5NPPI&dib
           =eyJ2IjoiMSJ9.0MEbzkzskj1u0H7-ERb-08Jx9EBn_F59sIC0vXD5OKKD2bv8OuDUgsM-0DCh1yifa28P
           tSiIMHHvcJ4xfNl9OME6sUqekL9LeLPR1adgxs7DRQD3zBNxpZOZjnbgWpts5LzE_LBCLgW9_oUke2L-aw4
@@ -117,9 +158,6 @@
           d3y8NLEczqNe9mxezluHL2A7Uq6HTxESqQg1D9LL.2CTAWwki1KoXlcH3Cx6G_x_SGLZm6EBVlTwNlAuU5eM&d
           ib_tag=se&keywords=led+clouds&qid=1742054092&sprefix=led+clou%2Caps%2C98&sr=8-6">
             see on amazon
-          </a>
-          <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=uFmy3T_0zxM">
-            see video
           </a>
         </div>
     </div>
@@ -131,8 +169,9 @@
           <p class="product-price">€<span class="euros">46</span><span class="cents">23</span></p>
         </div>
         <h3 class="product-description">
-          Description: <br>
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon> 5.0<br>
           Prepared hero fire blanket: clear small burns quickly and easily without mess (unlike conventional fire extinguishers). Simply unfold the blanket by pulling down the tabs.
+          <br><br><br>
         </h3>
         <div class="product-button-parent">
           <a class="product-button" target="_blank" href="https://www.amazon.de/Prepared-Hero-Fire-Blanket-Emerg
