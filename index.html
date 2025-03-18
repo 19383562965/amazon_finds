@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <!--TITLE-->
-  <title>tishop</title>
+  <title>Amazon finds</title>
   <!--IONICON-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -35,20 +35,21 @@
     <p class="cross" id="cross-side-menu"><ion-icon name="close-outline"></ion-icon></p>
     <p class="filter-name">filter</p>
 
-    <p class="name-for-filter">-basketball-</p>
-    <div class="checkbox-parent">
-      <input type="checkbox" id="checkbox-basketball" class="checkbox">
-    </div>
-    
-    <p class="name-for-filter">-LED-</p>
-    <div class="checkbox-parent">
-      <input type="checkbox" id="checkbox-LED" class="checkbox">
+    <p class="filter-button-hide" class="name-for-filter">-Back-</p>
+    <div class="filter-button-hide" class="checkbox-parent">
+      <button onclick="scrollToSection('amazon-finds')" class="filter-button"><ion-icon name="arrow-up-circle-outline"></ion-icon></button>
     </div>
 
-    <p class="name-for-filter">-Modern-</p>
+    <p class="name-for-filter">-NEW!-</p>
     <div class="checkbox-parent">
-      <input type="checkbox" id="checkbox-modern" class="checkbox">
+      <button onclick="scrollToSection('section-new')" class="filter-button"><ion-icon name="star"></ion-icon></button>
     </div>
+
+    <p class="name-for-filter">-Decorations-</p>
+    <div class="checkbox-parent">
+      <button onclick="scrollToSection('section-decorations')" class="filter-button"><ion-icon name="rose"></ion-icon></button>
+    </div>
+
   </div>
   <!--cart-menu-->
   <div class="cart-menu" id="cart-menu">
@@ -57,11 +58,16 @@
     <p class="cart-icon"><ion-icon name="cart-outline"></ion-icon></p>
     <p class="cart-icon">No items</p>
   </div>
+  <!--back-to-the-begining-->
+  <p class="arrow-back" onclick="scrollToSection('amazon-finds')"><ion-icon name="arrow-up-outline"></ion-icon></p>
   <!--products-->
-  <h1>Amazon finds</h1>
+  <h1 id="amazon-finds">Amazon finds</h1>
   <div class="section" style="margin-top: 80px;">
+    <!--Section-New-->
+    <h2 class="sections-name" id="section-new">NEW</h2>
+    <div class="sections">
 
-    <div class="product">
+ <div class="product">
       <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/7192m2Y1DvL._AC_SL1500_.jpg">
       <div class="name-price">
         <h2 class="product-name">Mag-Safe Charging</h2>
@@ -112,159 +118,177 @@
     </div>
 </div>
 
-    <div class="product">
-      <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61JotCrdeXL._AC_SL1000_.jpg">
-      <div class="name-price">
-        <h2 class="product-name">Fancy book shelf</h2>
-        <p class="product-price">€<span class="euros">29</span><span class="cents">48</span></p>
-      </div>
-      <h3 class="product-description">
-        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon> 2.5<br>
-        Creative Simple Wooden Tree Bookcase, Wooden Desktop Organiser Shelf, Multifunctional Display Shelf for Books, Magazines, CD 5-Tier Floor-Standing Bookshelves (White).
-        <br><br><br>
-      </h3>
-      <div class="product-button-parent">
-        <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/Organiser-Multifunctional-Maga
-        zines-Floor-Standing-Bookshelves/dp/B087X6ZKZZ/ref=sr_1_5?crid=3CVWWC980594H&dib=eyJ2IjoiMSJ9.J8SMY5uzMrKHO
-        5ydoyV4qQiBqDOQ8uQNfsddDRQ6P8EngrFjw-_N0LzE8MxdTqNA8MUXrojETi-VvBXJEvgu4oRA6j8JhNoj5wXLWTsxalI3pzkQB4PMrwqc
-        fVoWN1OHAfdmXmgzKMW62B4_PWVygQWfGod6ApUupsL1xXFZHpTZysuSktCGNeycJJ6p4ljOpE4eCff-sLuXRZPjUMY9ke6iLxm8H0RTNs2
-        X8Q4Mb_j7cHisUt-6tI8iszhbuKfkuz3w1VZFhA8J6MLSynL6_JiBpBeYImc56T56jgyCGKT3jqR9xtEiXHZX49n-nNUa_pBJ2DkIxJfbAd
-        42MMgY8apnJZoINRD38xGU0Ew4uFiZVuogtJXMuMU26dLtTSUUhVdeZncm7T0aa6jpFV2YwVFO6ogyXrY2Y3jIOdnIWxbrGRZXIDZaCo7V
-        znzlRjmt.a8HjBYJS5AaTwsqaF3KRpnqZ-WgU3AqmGmhoTrdXJaU&dib_tag=se&keywords=fancy%2Bbookshelf&qid=1742124455&
-        refinements=p_36%3A-3000&rnid=389361011&sprefix=fancy%2Bbook%2Caps%2C104&sr=8-5&th=1">
-          see on amazon
-        </a>
-      </div>
+<div class="product">
+  <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61JotCrdeXL._AC_SL1000_.jpg">
+  <div class="name-price">
+    <h2 class="product-name">Fancy book shelf</h2>
+    <p class="product-price">€<span class="euros">29</span><span class="cents">48</span></p>
   </div>
-
-    <div class="product">
-      <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71kZyzTL7fL._AC_SL1500_.jpg">
-      <div class="name-price">
-        <h2 class="product-name">Basket Light</h2>
-        <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
-      </div>
-      <h3 class="product-description">
-        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon> 4.5<br>
-        Unique 3D basketball lamp: the basketball lamp is made by 3D technology, which is based on real basketball. With its soothing, enchanted design, our basketball lamp keeps you away from the dark. Create a quiet ambience in your room and help you drift off into a happy sleep under the light.
-        <br><br><br>
-      </h3>
-      <div class="product-button-parent">
-        <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/Basketball-Colours-Changing-
-        Dimmable-Birthday/dp/B0CTDHYCFW/ref=sr_1_7?crid=31BLGE5B7ZG74&dib=eyJ2IjoiMSJ9.oYpYULsu9tsXN9mnAKCxlriez7
-        Ck6sj28kd6iwSC_QqG_MDs5pJYGq3jZ1APxJaxqSwT_1jdpE_QxqJ3mEdqABkmeaWrqw7NIXHaC8syakWGiG3DnyPTlhFsku8aqvaESsDp
-        Y5PtEzd6ePUlLZFd3JmvQzy52xn_FF9ZC2af9nXjIIti6vL1zJBKsuns5HKTTeL44b6oQmCF54Y8w-LbThzEmAT-RBgyxu0RyMrzajEkym
-        Um_dAYHtFXqRx1pDIrb5x_llQ89gPUGkkEsbSyghBr7rK7mZcP_gsYIr_DW3A4EmUQgqU-TiHLGeB56ERHz7XKCchoL_w-AoHEjoyv0rj4
-        Dcl6xiWsE7vkEgYZFArNCwF68nfjQB6CEb57ecdz9sELG7YvoeghYlgTrgW31IIHS4x4t5UF4PK9WsMrKfQJW7R_ZhZFMULmnn6wJ4d5.g
-        cwtM7bsbc10b__3XmQNYAgX8bUZkzlMr-EcEwjMw_s&dib_tag=se&keywords=basketball%2Blight&qid=1742055655&sprefix=ba
-        sketball%2Blight%2Caps%2C115&sr=8-7&th=1">
-          see on amazon
-        </a>
-      </div>
+  <h3 class="product-description">
+    <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon> 2.5<br>
+    Creative Simple Wooden Tree Bookcase, Wooden Desktop Organiser Shelf, Multifunctional Display Shelf for Books, Magazines, CD 5-Tier Floor-Standing Bookshelves (White).
+    <br><br><br>
+  </h3>
+  <div class="product-button-parent">
+    <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/Organiser-Multifunctional-Maga
+    zines-Floor-Standing-Bookshelves/dp/B087X6ZKZZ/ref=sr_1_5?crid=3CVWWC980594H&dib=eyJ2IjoiMSJ9.J8SMY5uzMrKHO
+    5ydoyV4qQiBqDOQ8uQNfsddDRQ6P8EngrFjw-_N0LzE8MxdTqNA8MUXrojETi-VvBXJEvgu4oRA6j8JhNoj5wXLWTsxalI3pzkQB4PMrwqc
+    fVoWN1OHAfdmXmgzKMW62B4_PWVygQWfGod6ApUupsL1xXFZHpTZysuSktCGNeycJJ6p4ljOpE4eCff-sLuXRZPjUMY9ke6iLxm8H0RTNs2
+    X8Q4Mb_j7cHisUt-6tI8iszhbuKfkuz3w1VZFhA8J6MLSynL6_JiBpBeYImc56T56jgyCGKT3jqR9xtEiXHZX49n-nNUa_pBJ2DkIxJfbAd
+    42MMgY8apnJZoINRD38xGU0Ew4uFiZVuogtJXMuMU26dLtTSUUhVdeZncm7T0aa6jpFV2YwVFO6ogyXrY2Y3jIOdnIWxbrGRZXIDZaCo7V
+    znzlRjmt.a8HjBYJS5AaTwsqaF3KRpnqZ-WgU3AqmGmhoTrdXJaU&dib_tag=se&keywords=fancy%2Bbookshelf&qid=1742124455&
+    refinements=p_36%3A-3000&rnid=389361011&sprefix=fancy%2Bbook%2Caps%2C104&sr=8-5&th=1">
+      see on amazon
+    </a>
   </div>
+</div>
 
-    <div class="product">
-      <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/613Fem1tyzL._AC_SL1500_.jpg">
-      <div class="name-price">
-        <h2 class="product-name">Digital Clock</h2>
-        <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
-      </div>
-      <h3 class="product-description">
-        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon> 4.0<br>
-        Large digital wall clock shows date/time, temperature (℃/℉) and adjustable night light, it is clear and large enough to read the time at night or long distance. Large clock size: 340g, easy to read, whether in the dark night or strong light, you can still read the time easily.
-        <br><br><br>
-      </h3>
-      <div class="product-button-parent">
-        <a class="product-button" target="_blank" href="https://www.amazon.de/KOSUMOSU-Wall-Light-Decoration-Aesthe
-        tic/dp/B09BB6D75H/ref=sr_1_22_sspa?crid=1ARQUSTQ25RUY&dib=eyJ2IjoiMSJ9.z128SRgzhSjpkMqau-Qh13_rKmKOlcGK9eZt
-        Zsdf0OF2ihH45_vnBvSo7CiUM4mDjeIYA5wNzo-eSAGNKLn9JcpovoREGqfcxqR9ko2vvdy9zmcCHaSvKNqom-0luegIzXQk3z5Yc3ddQ2En
-        uicfbkbTZoqR4S4e5pquqFfNg7lDTt-WKbOYlU8vUQcyVzMOjcniHo4YMwMFh0Wu9W0mEau2KDmScH-yvk0AvnpW_iyAG9ZnqtlnyDQu4m-u
-        1SFMqJuYLQHzkK6PoUnkLkKQHoibfW-JsJi_5jQbxtRTano.0Ju7ROnu9IptcFv32QDYMdGX2Q9LtxZjKN6dmiZZLCo&dib_tag=se&keywo
-        rds=house%2Bdecoration&qid=1742055186&sprefix=house%2Bde%2Caps%2C97&sr=8-22-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">
-          see on amazon
-        </a>
-        <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=6b42PE5oHIo&ab_channel=ReviewCentral">
-          see video
-        </a>
-      </div>
+<div class="product">
+  <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71kZyzTL7fL._AC_SL1500_.jpg">
+  <div class="name-price">
+    <h2 class="product-name">Basket Light</h2>
+    <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
   </div>
+  <h3 class="product-description">
+    <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon> 4.5<br>
+    Unique 3D basketball lamp: the basketball lamp is made by 3D technology, which is based on real basketball. With its soothing, enchanted design, our basketball lamp keeps you away from the dark. Create a quiet ambience in your room and help you drift off into a happy sleep under the light.
+    <br><br><br>
+  </h3>
+  <div class="product-button-parent">
+    <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/Basketball-Colours-Changing-
+    Dimmable-Birthday/dp/B0CTDHYCFW/ref=sr_1_7?crid=31BLGE5B7ZG74&dib=eyJ2IjoiMSJ9.oYpYULsu9tsXN9mnAKCxlriez7
+    Ck6sj28kd6iwSC_QqG_MDs5pJYGq3jZ1APxJaxqSwT_1jdpE_QxqJ3mEdqABkmeaWrqw7NIXHaC8syakWGiG3DnyPTlhFsku8aqvaESsDp
+    Y5PtEzd6ePUlLZFd3JmvQzy52xn_FF9ZC2af9nXjIIti6vL1zJBKsuns5HKTTeL44b6oQmCF54Y8w-LbThzEmAT-RBgyxu0RyMrzajEkym
+    Um_dAYHtFXqRx1pDIrb5x_llQ89gPUGkkEsbSyghBr7rK7mZcP_gsYIr_DW3A4EmUQgqU-TiHLGeB56ERHz7XKCchoL_w-AoHEjoyv0rj4
+    Dcl6xiWsE7vkEgYZFArNCwF68nfjQB6CEb57ecdz9sELG7YvoeghYlgTrgW31IIHS4x4t5UF4PK9WsMrKfQJW7R_ZhZFMULmnn6wJ4d5.g
+    cwtM7bsbc10b__3XmQNYAgX8bUZkzlMr-EcEwjMw_s&dib_tag=se&keywords=basketball%2Blight&qid=1742055655&sprefix=ba
+    sketball%2Blight%2Caps%2C115&sr=8-7&th=1">
+      see on amazon
+    </a>
+  </div>
+</div>
 
-    <div class="product">
-        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61ler2Tcp6L._AC_SL1500_.jpg">
-        <div class="name-price">
-          <h2 class="product-name">LED Clouds</h2>
-          <p class="product-price">€<span class="euros">117</span><span class="cents">00</span></p>
-        </div>
-        <h3 class="product-description">
-          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon> 3.5<br>
-          The cloud light will be the most magical wall decoration lighting you will find. Create the same feeling in our home through an abundance of DIY accessories.
-          <br><br><br><br><br>
-        </h3>
-        <div class="product-button-parent">
-          <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
-          Decoration-Changing-Thunder-Holiday/dp/B0BFLCC4XH/ref=sr_1_6?crid=W3WKC0K5NPPI&dib
-          =eyJ2IjoiMSJ9.0MEbzkzskj1u0H7-ERb-08Jx9EBn_F59sIC0vXD5OKKD2bv8OuDUgsM-0DCh1yifa28P
-          tSiIMHHvcJ4xfNl9OME6sUqekL9LeLPR1adgxs7DRQD3zBNxpZOZjnbgWpts5LzE_LBCLgW9_oUke2L-aw4
-          ziiIVyT8GB1I1dMy98f9fH2z-ebc5Drg0x89YG2NVIJzxJ_Zsc0Gg-6m-oUFQt0k01B7gjXwf-MG4yue41UH
-          dLko2ZRL5jmxgXxS3Yb_uB7EttZeDsQ2v4QybeyTlR9kQ5PHhei8UfB_48hOKSg_OQUnE1NOilJ6N9PDMuHrt1
-          fozUDKOlQCRa5V5CoENHzDtQpdnFSGskx2lVHel-NLDIDHJEhMyIBV4SxMgPmr5XFN_LmZbukbpuRealV1Erdd4
-          d3y8NLEczqNe9mxezluHL2A7Uq6HTxESqQg1D9LL.2CTAWwki1KoXlcH3Cx6G_x_SGLZm6EBVlTwNlAuU5eM&d
-          ib_tag=se&keywords=led+clouds&qid=1742054092&sprefix=led+clou%2Caps%2C98&sr=8-6">
-            see on amazon
-          </a>
-        </div>
     </div>
+    <!--Section-Decorations-->
+    <h2 class="sections-name" id="section-decorations">Decorations</h2>
+    <div class="sections">
 
-    <div class="product">
-        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71Ja4j-hJML.__AC_SX300_SY300_QL70_ML2_.jpg">
+      <div class="product">
+        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/613Fem1tyzL._AC_SL1500_.jpg">
         <div class="name-price">
-          <h2 class="product-name">Fire Blanket</h2>
-          <p class="product-price">€<span class="euros">46</span><span class="cents">23</span></p>
+          <h2 class="product-name">Digital Clock</h2>
+          <p class="product-price">€<span class="euros">25</span><span class="cents">54</span></p>
         </div>
         <h3 class="product-description">
-          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon> 5.0<br>
-          Prepared hero fire blanket: clear small burns quickly and easily without mess (unlike conventional fire extinguishers). Simply unfold the blanket by pulling down the tabs.
-          <br><br><br><br><br>
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-outline"></ion-icon> 4.0<br>
+          Large digital wall clock shows date/time, temperature (℃/℉) and adjustable night light, it is clear and large enough to read the time at night or long distance. Large clock size: 340g, easy to read, whether in the dark night or strong light, you can still read the time easily.
+          <br><br><br>
         </h3>
         <div class="product-button-parent">
-          <a class="product-button" target="_blank" href="https://www.amazon.de/Prepared-Hero-Fire-Blanket-Emerg
-          encies/dp/B08TYT543Y/ref=sr_1_2_sspa?crid=2WWJWHT0GDGGK&dib=eyJ2IjoiMSJ9.J-RNxs2mrPCfaIuH7kQp1xH6oFDbu
-          woH2R9s9svTVePJ7HGJ1RLITa840A4g5Opada0DhnnCQSl1VDu5kAm6uVF-VAUs7Cw-fibLQMQKln1QnDatIJhRabkiD083KNog1KhL
-          LE74z7kTrCDTMarQVJqkePmdOk0JocVcuzxNyUP6lFqegQDf_79YvGbauBQ5FwgFjYTvy8sS_WrM7KZ3KZPrMMO8hVU8rWYfC9vPN9F
-          b7QEJO-7X4d6YKV0aAjWGC0CRtKYD_2ErF5FaaQ_xVwxS84Q051JcXFz2QgzBobE.TMn_Vqn5IfNup3KuIV-fxHsj3ZJMbae_FOcKEK
-          kfr5E&dib_tag=se&keywords=fire%2Bblanket&qid=1742051822&sprefix=fire%2Bbl%2Caps%2C94&sr=8-2-spons&sp_cs
-          d=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+          <a class="product-button" target="_blank" href="https://www.amazon.de/KOSUMOSU-Wall-Light-Decoration-Aesthe
+          tic/dp/B09BB6D75H/ref=sr_1_22_sspa?crid=1ARQUSTQ25RUY&dib=eyJ2IjoiMSJ9.z128SRgzhSjpkMqau-Qh13_rKmKOlcGK9eZt
+          Zsdf0OF2ihH45_vnBvSo7CiUM4mDjeIYA5wNzo-eSAGNKLn9JcpovoREGqfcxqR9ko2vvdy9zmcCHaSvKNqom-0luegIzXQk3z5Yc3ddQ2En
+          uicfbkbTZoqR4S4e5pquqFfNg7lDTt-WKbOYlU8vUQcyVzMOjcniHo4YMwMFh0Wu9W0mEau2KDmScH-yvk0AvnpW_iyAG9ZnqtlnyDQu4m-u
+          1SFMqJuYLQHzkK6PoUnkLkKQHoibfW-JsJi_5jQbxtRTano.0Ju7ROnu9IptcFv32QDYMdGX2Q9LtxZjKN6dmiZZLCo&dib_tag=se&keywo
+          rds=house%2Bdecoration&qid=1742055186&sprefix=house%2Bde%2Caps%2C97&sr=8-22-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">
             see on amazon
           </a>
-          <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=pvgbiSBcsfU">
+          <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=6b42PE5oHIo&ab_channel=ReviewCentral">
             see video
           </a>
         </div>
     </div>
+  
+      <div class="product">
+          <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61ler2Tcp6L._AC_SL1500_.jpg">
+          <div class="name-price">
+            <h2 class="product-name">LED Clouds</h2>
+            <p class="product-price">€<span class="euros">117</span><span class="cents">00</span></p>
+          </div>
+          <h3 class="product-description">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon> 3.5<br>
+            The cloud light will be the most magical wall decoration lighting you will find. Create the same feeling in our home through an abundance of DIY accessories.
+            <br><br><br><br><br>
+          </h3>
+          <div class="product-button-parent">
+            <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/SAROZZTAL-
+            Decoration-Changing-Thunder-Holiday/dp/B0BFLCC4XH/ref=sr_1_6?crid=W3WKC0K5NPPI&dib
+            =eyJ2IjoiMSJ9.0MEbzkzskj1u0H7-ERb-08Jx9EBn_F59sIC0vXD5OKKD2bv8OuDUgsM-0DCh1yifa28P
+            tSiIMHHvcJ4xfNl9OME6sUqekL9LeLPR1adgxs7DRQD3zBNxpZOZjnbgWpts5LzE_LBCLgW9_oUke2L-aw4
+            ziiIVyT8GB1I1dMy98f9fH2z-ebc5Drg0x89YG2NVIJzxJ_Zsc0Gg-6m-oUFQt0k01B7gjXwf-MG4yue41UH
+            dLko2ZRL5jmxgXxS3Yb_uB7EttZeDsQ2v4QybeyTlR9kQ5PHhei8UfB_48hOKSg_OQUnE1NOilJ6N9PDMuHrt1
+            fozUDKOlQCRa5V5CoENHzDtQpdnFSGskx2lVHel-NLDIDHJEhMyIBV4SxMgPmr5XFN_LmZbukbpuRealV1Erdd4
+            d3y8NLEczqNe9mxezluHL2A7Uq6HTxESqQg1D9LL.2CTAWwki1KoXlcH3Cx6G_x_SGLZm6EBVlTwNlAuU5eM&d
+            ib_tag=se&keywords=led+clouds&qid=1742054092&sprefix=led+clou%2Caps%2C98&sr=8-6">
+              see on amazon
+            </a>
+          </div>
+      </div>
+  
+      <div class="product">
+          <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71Ja4j-hJML.__AC_SX300_SY300_QL70_ML2_.jpg">
+          <div class="name-price">
+            <h2 class="product-name">Fire Blanket</h2>
+            <p class="product-price">€<span class="euros">46</span><span class="cents">23</span></p>
+          </div>
+          <h3 class="product-description">
+            <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon> 5.0<br>
+            Prepared hero fire blanket: clear small burns quickly and easily without mess (unlike conventional fire extinguishers). Simply unfold the blanket by pulling down the tabs.
+            <br><br><br><br><br>
+          </h3>
+          <div class="product-button-parent">
+            <a class="product-button" target="_blank" href="https://www.amazon.de/Prepared-Hero-Fire-Blanket-Emerg
+            encies/dp/B08TYT543Y/ref=sr_1_2_sspa?crid=2WWJWHT0GDGGK&dib=eyJ2IjoiMSJ9.J-RNxs2mrPCfaIuH7kQp1xH6oFDbu
+            woH2R9s9svTVePJ7HGJ1RLITa840A4g5Opada0DhnnCQSl1VDu5kAm6uVF-VAUs7Cw-fibLQMQKln1QnDatIJhRabkiD083KNog1KhL
+            LE74z7kTrCDTMarQVJqkePmdOk0JocVcuzxNyUP6lFqegQDf_79YvGbauBQ5FwgFjYTvy8sS_WrM7KZ3KZPrMMO8hVU8rWYfC9vPN9F
+            b7QEJO-7X4d6YKV0aAjWGC0CRtKYD_2ErF5FaaQ_xVwxS84Q051JcXFz2QgzBobE.TMn_Vqn5IfNup3KuIV-fxHsj3ZJMbae_FOcKEK
+            kfr5E&dib_tag=se&keywords=fire%2Bblanket&qid=1742051822&sprefix=fire%2Bbl%2Caps%2C94&sr=8-2-spons&sp_cs
+            d=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+              see on amazon
+            </a>
+            <a class="product-button" target="_blank" href="https://www.youtube.com/watch?v=pvgbiSBcsfU">
+              see video
+            </a>
+          </div>
+      </div>
+  
+      <div class="product">
+        <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71q9jbuOT-L._AC_SL1500_.jpg">
+        <div class="name-price">
+          <h2 class="product-name">Mirror with Lighting</h2>
+          <p class="product-price">€<span class="euros">49</span><span class="cents">15</span></p>
+        </div>
+        <h3 class="product-description">
+          <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></ion-icon><ion-icon name="star-half"></ion-icon> 4.5<br>
+          FUNTOUCH Hollywood Cosmetic Mirror with Lighting, Large Makeup Mirror with 9 LED Lights, 3 Colour Temperature Adjustable, 360° Rotation, Touch Control, Plug-in, Cosmetic Table Mirror (White)
+          <br><br>
+        </h3>
+        <div class="product-button-parent">
+          <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/FUNTOUCH-Cosmetic-Lighting-Tempe
+          ratures-Adjustable/dp/B0CF9M1NW2/ref=sr_1_6?crid=1BKPA58CDS5TT&dib=eyJ2IjoiMSJ9.FUvkeqnA2koDo1SjccNtF
+          8DJJR9nqU38OHSJon6rO580BbzkeYOwVijU-6nCckgobyerbpuxeMkArj434awi3G8oFOCDGVgJRk-kU1MghQpUwq2JHPm-wBW9NM
+          Lbd53yvjK36XwpxQznNKw4nNT-YbraslWlApCAEyRPTY_aGzPHNJr2j4EfoSgkLavTsE8W9Ij9xGKvdO-brR30fa5itgXsTGsxX2M
+          VuUhZVkR_E6Cz0aXyw9KbFn040Mq7r_JIAjcskh4S8oAb7jB795lrtT0CmYltX2ydg6SFkOlgAoajoX2DDn0AwGnz2O6l7JCf0wNn
+          3hasp3TxPBR5pc5kAMPnrPYlB1AwvoonAzOXjQXWiGOZjo0uhopX7xWahkCpuWSsjI4gkFbECOolz1_xB7rPYrXtuHiqGbPZgI8ln
+          nSCr3u4SjEJhGiUE60NIGgA.1HbnRmXUcZ0A6P-_iX55tK_1FNTT9rDB1hFxIwX7LV4&dib_tag=se&keywords=smart%2Bmirro
+          r&qid=1742135376&refinements=p_36%3A-5000&rnid=389361011&sprefix=smart%2Bmir%2Caps%2C91&sr=8-6&th=1">
+            see on amazon
+          </a>
+        </div>
+    </div>
 
-    <div class="product">
-      <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71q9jbuOT-L._AC_SL1500_.jpg">
-      <div class="name-price">
-        <h2 class="product-name">Mirror with Lighting</h2>
-        <p class="product-price">€<span class="euros">49</span><span class="cents">15</span></p>
-      </div>
-      <h3 class="product-description">
-        <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></ion-icon><ion-icon name="star-half"></ion-icon> 4.5<br>
-        FUNTOUCH Hollywood Cosmetic Mirror with Lighting, Large Makeup Mirror with 9 LED Lights, 3 Colour Temperature Adjustable, 360° Rotation, Touch Control, Plug-in, Cosmetic Table Mirror (White)
-        <br><br>
-      </h3>
-      <div class="product-button-parent">
-        <a class="product-button-2" target="_blank" href="https://www.amazon.de/-/en/FUNTOUCH-Cosmetic-Lighting-Tempe
-        ratures-Adjustable/dp/B0CF9M1NW2/ref=sr_1_6?crid=1BKPA58CDS5TT&dib=eyJ2IjoiMSJ9.FUvkeqnA2koDo1SjccNtF
-        8DJJR9nqU38OHSJon6rO580BbzkeYOwVijU-6nCckgobyerbpuxeMkArj434awi3G8oFOCDGVgJRk-kU1MghQpUwq2JHPm-wBW9NM
-        Lbd53yvjK36XwpxQznNKw4nNT-YbraslWlApCAEyRPTY_aGzPHNJr2j4EfoSgkLavTsE8W9Ij9xGKvdO-brR30fa5itgXsTGsxX2M
-        VuUhZVkR_E6Cz0aXyw9KbFn040Mq7r_JIAjcskh4S8oAb7jB795lrtT0CmYltX2ydg6SFkOlgAoajoX2DDn0AwGnz2O6l7JCf0wNn
-        3hasp3TxPBR5pc5kAMPnrPYlB1AwvoonAzOXjQXWiGOZjo0uhopX7xWahkCpuWSsjI4gkFbECOolz1_xB7rPYrXtuHiqGbPZgI8ln
-        nSCr3u4SjEJhGiUE60NIGgA.1HbnRmXUcZ0A6P-_iX55tK_1FNTT9rDB1hFxIwX7LV4&dib_tag=se&keywords=smart%2Bmirro
-        r&qid=1742135376&refinements=p_36%3A-5000&rnid=389361011&sprefix=smart%2Bmir%2Caps%2C91&sr=8-6&th=1">
-          see on amazon
-        </a>
-      </div>
-  </div>
+    <h2 class="sections-name">THE END</h2>
+
+    </div>
+
+   
+
+  
+
+    
+    
+
+  
 
 
   <script src="script.js"></script>
