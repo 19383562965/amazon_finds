@@ -16,3 +16,7 @@ document.getElementById('cart-menu').onmouseleave = function() {
 document.getElementById('cross-cart-menu').onclick = function() {
   document.getElementById('cart-menu').style = 'transition: 0.25s; right: -100%;';
 };
+
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+}
