@@ -21,12 +21,19 @@
     <p class="shops-name">amazon<ion-icon name="cube-outline"></ion-icon>finds .de</p>
     <div class="search-buttons">
       <div class="full-search">
-        <input type="text" placeholder="Search amazon finds..." class="search">
-        <button class="search-button"><ion-icon name="search-outline"></ion-icon></button>
+        <input list="searchOptions" type="search" placeholder="Search amazon finds..." class="search" id="search">
+        <datalist id="searchOptions">
+          <option value="new" style="cursor: pointer;">
+          <option value="decoration">
+          <option value="furniture">
+          <option value="electronics">
+          <option value="inline-block">
+        </datalist>
+        <button class="search-button" id="button-to-search"><ion-icon name="search-outline"></ion-icon></button>
       </div>
-      <div class='parent-menu-buttons'>
+      <div style="margin-right: 10px; @media only screen and (max-width: 450px) {margin-right: 0;}">
         <button id="cart-button" class="menu-buttons"><ion-icon name="bag-outline"></ion-icon></button>
-        <button id="side-menu-button" class="menu-buttons" class="menu-buttons-end"><ion-icon name="reorder-four-outline"></ion-icon></button>
+        <button id="side-menu-button" class="menu-buttons"><ion-icon name="reorder-four-outline"></ion-icon></button>
       </div>
     </div>
   </div>
@@ -78,9 +85,11 @@
   <!--products-->
   <h1 id="amazon-finds">Amazon finds</h1>
   <div class="section" style="margin-top: 80px;">
+    <!--section-cross-->
+    <h2 class="sections-name" id="section-cross" style="display: none; cursor: pointer; font-size: 50px; padding: 0; width: 80%; height: 50px; background-color: rgb(255, 220, 220);"><ion-icon name="close-outline"></ion-icon></h2>
     <!--Section-New-->
     <h2 class="sections-name" id="section-new">NEW</h2>
-    <div class="sections">
+    <div class="sections" id="section-new-div">
       
       <div class="product">
         <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61Ywx2jYLKL._AC_SL1200_.jpg">
@@ -199,9 +208,9 @@
       </div>
 
     </div>
-    <!--Section-Decorations-->
-    <h2 class="sections-name" id="section-decorations">Decorations</h2>
-    <div class="sections">
+    <!--Section-Decoration-->
+    <h2 class="sections-name" id="section-decorations">Decoration</h2>
+    <div class="sections" id="section-decorations-div">
   
       <div class="product">
           <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/61ler2Tcp6L._AC_SL1500_.jpg">
@@ -320,7 +329,7 @@
     </div>
     <!--Section-Furniture-->
     <h2 class="sections-name" id="section-furniture">Furniture</h2>
-    <div class="sections">
+    <div class="sections" id="section-furniture-div">
       
 
 
@@ -427,7 +436,7 @@
     </div>
         <!--Section-Electronics-->
         <h2 class="sections-name" id="section-electronics">Electronics</h2>
-        <div class="sections">
+        <div class="sections" id="section-electronics-div">
 
           <div class="product">
             <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/613Fem1tyzL._AC_SL1500_.jpg">
@@ -520,7 +529,7 @@
         </div>
                 <!--Section-Safety-->
                 <h2 class="sections-name" id="section-safety">Safety</h2>
-                <div class="sections">
+                <div class="sections" id="section-safety-div">
 
                   <div class="product">
                     <img class="product-image" alt="image" src="https://m.media-amazon.com/images/I/71Ja4j-hJML.__AC_SX300_SY300_QL70_ML2_.jpg">
@@ -565,7 +574,8 @@
                 </div>
             
                 </div>
-    <h2 class="sections-name">THE END</h2>
+    <h2 class="sections-name" id="section-the-end">THE END</h2>
+    <h2 class="sections-name" id="section-not-found" style="display: none;">not found</h2>
 
   <script src="script.js"></script>
 </body>
